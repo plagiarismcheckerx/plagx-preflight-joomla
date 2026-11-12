@@ -19,7 +19,7 @@ Need a quick citation online? Use the [free citation generator](https://plagiari
 
 ## Install
 
-1. Download `plg_system_plagxdraftpreflight.zip` from the [latest release](https://github.com/plagiarismcheckerx/plagx-preflight-joomla/releases/latest).
+1. Download `plagx-draft-preflight-joomla.zip` from the [latest release](https://github.com/plagiarismcheckerx/plagx-preflight-joomla/releases/latest).
 2. In the administrator, go to **System → Install → Extensions** and upload the zip.
 3. Go to **System → Manage → Plugins**, search for **Plagx Draft Preflight** and enable it.
 4. Edit an article, open the **Draft Preflight** tab and click **Check draft**.
