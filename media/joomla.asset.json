@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "plg_system_plagxdraftpreflight",
+  "version": "1.0.0",
+  "description": "Plagx Draft Preflight panel",
+  "license": "GPL-2.0-or-later",
+  "assets": [
+    {
+      "name": "plg_system_plagxdraftpreflight.panel",
+      "type": "style",
+      "uri": "plg_system_plagxdraftpreflight/plagx-preflight.css"
+    },
+    {
+      "name": "plg_system_plagxdraftpreflight.panel",
+      "type": "script",
+      "uri": "plg_system_plagxdraftpreflight/plagx-preflight.js",
+      "attributes": { "type": "module" },
+      "dependencies": ["core"]
+    }
+  ]
+}

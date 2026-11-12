@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields name="attribs">
+		<fieldset name="plagxdraftpreflight" label="PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_TAB" addfieldprefix="Plagx\Plugin\System\DraftPreflight\Field">
+			<field name="plagx_preflight_panel" type="preflight" hiddenLabel="true"/>
+		</fieldset>
+	</fields>
+</form>

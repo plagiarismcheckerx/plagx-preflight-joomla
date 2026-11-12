@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="system" method="upgrade">
+	<name>plg_system_plagxdraftpreflight</name>
+	<author>Plagiarism Checker X</author>
+	<authorEmail>app@plagiarismcheckerx.com</authorEmail>
+	<authorUrl>https://plagiarismcheckerx.com/?utm_source=plagx-preflight-joomla</authorUrl>
+	<creationDate>2026-11</creationDate>
+	<copyright>(C) 2026 Plagiarism Checker X</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_XML_DESCRIPTION</description>
+	<namespace path="src">Plagx\Plugin\System\DraftPreflight</namespace>
+	<files>
+		<folder plugin="plagxdraftpreflight">services</folder>
+		<folder>src</folder>
+		<folder>forms</folder>
+	</files>
+	<media folder="media" destination="plg_system_plagxdraftpreflight">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>joomla.asset.json</filename>
+	</media>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/plg_system_plagxdraftpreflight.ini</language>
+		<language tag="en-GB">en-GB/plg_system_plagxdraftpreflight.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="min_words" type="number" label="PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_MIN_WORDS" description="PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_NO_LIMIT" default="0" min="0" step="1" filter="integer"/>
+				<field name="max_words" type="number" label="PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_MAX_WORDS" description="PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_NO_LIMIT" default="0" min="0" step="1" filter="integer"/>
+				<field name="style" type="list" label="PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_STYLE" default="apa" validate="options">
+					<option value="apa">PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_STYLE_APA</option>
+					<option value="mla">PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_STYLE_MLA</option>
+				</field>
+				<field name="checks" type="checkboxes" label="PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_CHECKS" default="length,references,punctuation,grammar" validate="options">
+					<option value="length">PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_CHECK_LENGTH</option>
+					<option value="references">PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_CHECK_REFERENCES</option>
+					<option value="punctuation">PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_CHECK_PUNCTUATION</option>
+					<option value="grammar">PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_CHECK_GRAMMAR</option>
+					<option value="passive-voice">PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_CHECK_PASSIVE</option>
+				</field>
+				<field name="credit" type="note" description="PLG_SYSTEM_PLAGXDRAFTPREFLIGHT_CREDIT"/>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="Plagx Draft Preflight">https://raw.githubusercontent.com/plagiarismcheckerx/plagx-preflight-joomla/main/updates.xml</server>
+	</updateservers>
+</extension>
